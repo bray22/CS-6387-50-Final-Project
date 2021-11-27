@@ -1,0 +1,49 @@
+button {
+  height: 60px;
+  width: 60px;
+  outline: none;
+  margin: 10px;
+  border: none;
+  border-radius: 2px;
+}
+
+body {
+  height:400px;
+  width: 400px;
+}
+
+#network {
+  width: 100%;
+  
+}
+
+.network_row {
+  border-bottom: 1px solid silver;
+  display: flex;
+  width: 100%;
+}
+
+.metric_label {
+  
+  padding: 5px;
+  flex: 0 100px;
+}
+
+.metric {
+  flex: 1;
+  padding: 5px;
+}
+
+.grade {
+  flex: 0 50px;
+}
+
+.header {
+  text-align: right;
+}
+
+
+button.current {
+  box-shadow: 0 0 0 2px white,
+              0 0 0 4px black;
+}
