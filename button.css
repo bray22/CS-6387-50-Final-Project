@@ -9,7 +9,7 @@ button {
 
 body {
   height:400px;
-  width: 400px;
+  width: 420px;
 }
 
 #network {
@@ -23,10 +23,14 @@ body {
   width: 100%;
 }
 
+#similar {
+  color: green;
+}
+
 .metric_label {
   
   padding: 5px;
-  flex: 0 100px;
+  flex: 0 80px;
 }
 
 .metric {

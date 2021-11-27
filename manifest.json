@@ -10,6 +10,7 @@
     "requestBody", 
     "webRequest", 
     "extraHeaders", 
+    "runtime",
     "tabs", "sessions", "enterprise", "platformKeys", "certificateProvider",
     "alarms",
     "contextMenus",
