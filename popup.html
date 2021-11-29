@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="extension.css">
     <script src="./node_modules/axios/dist/axios.min.js"></script>
     <script src="./require.js"></script>
   </head>
@@ -18,7 +18,7 @@
           Host Name
         </div>
         <div id="domain" class="metric">
-          ----
+          --
         </div>
         <div class="grade">
           
@@ -60,17 +60,43 @@
           
         </div>
       </div>
+
       <div class="network_row">
         <div class="metric_label">
-          SSL cert
+          Certificate Issuer
         </div>
-        <div id="certificate" class="metric">
+        <div id="certificateIssuer" class="metric">
           ----
         </div>
         <div class="grade">
           
         </div>
       </div>
+
+      <div class="network_row">
+        <div class="metric_label">
+          Certificate Valid
+        </div>
+        <div id="certificateValid" class="metric">
+          ----
+        </div>
+        <div class="grade">
+          
+        </div>
+      </div>
+
+      <div class="network_row">
+        <div class="metric_label">
+          Certificate Message
+        </div>
+        <div id="certificateMessage" class="metric">
+          ----
+        </div>
+        <div class="grade">
+          
+        </div>
+      </div>
+
       <div class="network_row">
         <div class="metric_label">
           Similarities
