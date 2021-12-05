@@ -1,0 +1,87 @@
+body {
+  height:390px;
+  width: 400px;
+}
+
+#network {
+  width: 100%;
+}
+
+.flag {
+  height: 20px;
+  padding: 0;
+  margin-left: 10px;
+}
+
+.network_row {
+  border-bottom: 1px solid silver;
+  display: flex;
+  width: 100%;
+}
+
+.alert {
+  background: pink;
+}
+
+#logo {
+  width: 380px;
+}
+
+#header {
+  display: flex;
+  width: 100%;
+}
+
+#close {
+  width: 40px;
+  padding: 20px 0 0 20px;
+}
+
+#closeButton {
+  cursor: pointer;
+}
+
+.metric_label {
+  padding: 7px;
+  flex: 0 110px;
+}
+
+#country {
+  display: flex;
+}
+
+#country div {
+  padding: 0;
+  margin: 0;
+  height: 15px;
+}
+
+.metric {
+  flex: 1;
+  padding: 7px;
+  color: #333;
+}
+
+.grade {
+  flex: 0 50px;
+}
+
+.grade div {
+  width: 15px;
+  height: 15px;
+  margin: 7px 0 0 25px;
+  border-radius: 15px;
+  background: green;
+}
+
+.grade div.warning {
+  background: #EED202;
+}
+
+.grade div.alert {
+  background: #d40000;
+}
+
+.header {
+  text-align: right;
+}

@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="extension.css">
-    <script src="./node_modules/axios/dist/axios.min.js"></script>
-    <script src="./require.js"></script>
+    <link rel="stylesheet" href="./css/extension.css">
+    <script src="./js/axios.min.js"></script>
+    <script src="./js/punycode.js"></script>
+    <meta charset="UTF-8">
   </head>
   <body>
-    <button id="changeColor"></button>
-    <script src="popup.js"></script>
-    <p>Sus Guard</p>
+    <script src="./js/popup.js"></script>
+    <div id="header">
+      <div id="logo">
+        <img src="./images/legit_DNS.png" width="300" />
+      </div>
+      <div id="close">
+        <img id="closeButton" src="./images/close.jpg" width="30" />
+      </div>
+    </div>
     <div id="network">
       <div class="header">
-        <span>Grade</span>
+       <!-- <span>Grade</span> -->
       </div>
       <div class="network_row">
         <div class="metric_label">
           Host Name
         </div>
         <div id="domain" class="metric">
-          --
+          -
         </div>
         <div class="grade">
-          
+          <div></div>
         </div>
       </div>
 
       <div class="network_row">
         <div class="metric_label">
-          Domain Age
+          IP Address
         </div>
-        <div id="domainage" class="metric">
-          ----
+        <div id="networkAddr" class="metric">
+          -
         </div>
         <div class="grade">
-          
+          <div id=""></div>
         </div>
       </div>
 
@@ -42,10 +49,10 @@
           Country
         </div>
         <div id="country" class="metric">
-          ----
+          -
         </div>
         <div class="grade">
-          
+          <div id="countryGrade" title="country"></div>
         </div>
       </div>
      
@@ -53,11 +60,11 @@
         <div class="metric_label">
           Punycode
         </div>
-        <div id="punycode" class="metric">
-          ----
+        <div id="punyCode" class="metric">
+          No
         </div>
         <div class="grade">
-          
+          <div id="punyCodeGrade"></div>
         </div>
       </div>
 
@@ -66,10 +73,10 @@
           Certificate Issuer
         </div>
         <div id="certificateIssuer" class="metric">
-          ----
+          -
         </div>
         <div class="grade">
-          
+          <div></div>
         </div>
       </div>
 
@@ -78,10 +85,10 @@
           Certificate Valid
         </div>
         <div id="certificateValid" class="metric">
-          ----
+          -
         </div>
         <div class="grade">
-          
+          <div id="certificateValidGrade"></div>
         </div>
       </div>
 
@@ -90,10 +97,10 @@
           Certificate Message
         </div>
         <div id="certificateMessage" class="metric">
-          ----
+          -
         </div>
         <div class="grade">
-          
+          <div id="certificateMessageGrade"></div>
         </div>
       </div>
 
@@ -105,9 +112,10 @@
           There are no similar popular domains
         </div>
         <div class="grade">
-          
+          <div id="similarGrade"></div>
         </div>
       </div>
+
       <div class="network_row">
         <div class="metric_label">
           Languages
@@ -116,18 +124,19 @@
           ----
         </div>
         <div class="grade">
-          
+          <div></div>
         </div>
       </div>
       <div class="network_row">
         <div class="metric_label">
+          <!--homographic domain?-->
           Special Characters
         </div>
-        <div id="specialcharactrs" class="metric">
-          ----
+        <div id="specialChars" class="metric">
+          No
         </div>
         <div class="grade">
-
+          <div id="specialCharsGrade"></div>
         </div>
       </div>
     </div>
