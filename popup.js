@@ -36,13 +36,6 @@ getHostName = (tabs) => {
   return host;
 }
 
-getTopDomains = async () => {
-  result = await fetch("./json/topdomains.json");
- 
-  return result;
-}
-
-
 getLevenshteinDistance = (s, t) => {
   if (!s.length) return t.length;
   if (!t.length) return s.length;
@@ -133,7 +126,7 @@ getDomainLocation = (hostName) => {
 
   } else {
 
-    fetch(`https://find-any-ip-address-or-domain-location-world-wide.p.rapidapi.com/iplocation?ip=${hostName}&apikey=873dbe322aea47f89dcf729dcc8f60e8`, {
+    fetch(`https://find-any-ip-address-or-domain-location-world-wide.p.rapidapi.com/iplocation?ip=${hostname}&apikey=873dbe322aea47f89dcf729dcc8f60e8`, {
       "method": "GET",
       "headers": {
         "x-rapidapi-host": "find-any-ip-address-or-domain-location-world-wide.p.rapidapi.com",
@@ -199,7 +192,7 @@ getCertificateTest = () => {
 }
 
 getDomainCertificate = (hostName) => {
-  const test = false;
+  const test = true;
   if (test) {
     getCertificateTest();
   } else {
